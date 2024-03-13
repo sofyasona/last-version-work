@@ -8,8 +8,19 @@ int j = 0;
 for (int i= 0; i < str.Length; i++)
 {
 int Length = str[i].Length;
-if (Length<= 3)
+if (Length <= 3)
 {
     j++;
+}
+}
+string [] NewStr = new string[j];
+int x = 0;
+for (int i= 0; i < str.Length; i++)
+{
+    int Length = str[i].Length;
+if (Length <= 3)
+{
+    NewStr[x] = str[i];
+    x++;
 }
 }
