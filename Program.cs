@@ -24,3 +24,7 @@ if (Length <= 3)
     x++;
 }
 }
+foreach (var item in NewStr)
+{
+    Console.Write($"{item}");
+}
